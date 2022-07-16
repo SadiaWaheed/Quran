@@ -1,5 +1,8 @@
 $(document).ready(function () {
   $('#homePage').click(function () {
-          $(this).load('1.html');
+      for(let i = 1; 1< 115; i++){
+        $(this).load(i+'.html');
+      }    
+      
    });
 });
