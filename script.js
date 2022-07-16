@@ -1,7 +1,5 @@
-
-  $('#homePage').ready(function () {
-    const ayahs = []
-    $(this).load('1.html .ayah');
-      
+$(document).ready(function () {
+  $('#homePage').click(function () {
+    $(this).load('1.html .ayah');      
   });
-
+});
