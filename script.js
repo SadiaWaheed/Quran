@@ -5,5 +5,5 @@ $(document).ready(function () {
         ayahs[i] = $(this).load(i+'.html .ayah');
       }    
       console.log(ayahs[114])
-  }):
+  });
 });
