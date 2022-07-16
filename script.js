@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('#homePage').click(function () {
+  $('#homePage').ready(function () {
     const ayahs = []
     $(this).load('1.html .ayah');
       
