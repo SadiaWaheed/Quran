@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('#homePage').click(function () {
     $(this).load('1.html .ayah')
-  });
+    
   var data = []
   jsonData = null;
   $('.ayah').each(function(){
@@ -14,4 +14,5 @@ $(document).ready(function () {
   });
   jsonData = JSON.stringify(data)
   console.log(JSON.stringify(jsonData))
+  });
 });
