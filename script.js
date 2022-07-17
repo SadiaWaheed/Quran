@@ -13,7 +13,7 @@ $(document).ready(function () {
     i++;
     data.push({
       ayah_no: i,
-      Indo_text: $('span', item).text()
+      indo_text: $('span', item).text()
     });
   });
   jsonData = JSON.stringify(data)
