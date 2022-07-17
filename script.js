@@ -21,13 +21,13 @@ $(document).ready(function () {
       data.push({
         ayah_no: a,
         indo_text: $('span', item).text()
-      });
+      });    
+    });
     surah.push({
       surah_no:s,
       text:JSON.stringify(data)
-    })
     });
-  })
+  });
   
   jsonData = JSON.stringify(surah)
   console.log(jsonData)
