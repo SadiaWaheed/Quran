@@ -1,7 +1,11 @@
-$(document).ready(function () {
+window.onload = function(){
   $('#homePage').click(function () {
     $(this).load('1.html .ayah')
   });
+
+}
+$(document).ready(function () {
+ 
 
   $('#result').click(function () {
   var data = []
@@ -9,11 +13,10 @@ $(document).ready(function () {
   i=-1
   $('.ayah').each(function(){
     var item = $(this)
-    console.log(i)
     i++;
     data.push({
-      id: i,
-      ayah: $('span', item).text()
+      ayah_no: i,
+      Indo_text: $('span', item).text()
     });
   });
   jsonData = JSON.stringify(data)
