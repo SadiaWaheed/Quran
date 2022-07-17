@@ -9,11 +9,11 @@ $(document).ready(function () {
   $('.ayah').each(function(){
     var item = $(this)
     data.push({
-      ayah: item.data('id'),
-      name: $('span', item).text()
+      id: item.data('id'),
+      ayah: $('span', item).text()
     });
   });
   jsonData = JSON.stringify(data)
-  console.log(JSON.stringify(jsonData))
+  console.log(jsonData)
   });
 });
