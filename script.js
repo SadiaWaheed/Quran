@@ -2,8 +2,8 @@
 $(document).ready(function () {
   $('#homePage').click(function () {
     $(this).load('1.html .ayah')
-    for(let i = 114; i<114 ; i++){
-      $('body').append($('<div>').load(i+'.html .ayah'))
+    for(let i = 2; i<=114 ; i++){
+      $('#homePage').append($('<div>').load(i+'.html .ayah'))
     }
   });
 
