@@ -1,6 +1,6 @@
 window.onload = function(){
   
-    document.body.innerHTML = $(this).load('1.html .ayah')
+    $('#homePage').load('1.html .ayah')
 
 }
 $(document).ready(function () {
