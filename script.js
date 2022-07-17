@@ -8,7 +8,7 @@ $(document).ready(function () {
     var item = $(this)
     
     data.push({
-      ayah: item.data('id')
+      ayah: item.data('id'),
       name: $('span', item).text()
     });
   });
