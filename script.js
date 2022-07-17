@@ -2,7 +2,7 @@
 $(document).ready(function () {
   $('#homePage').click(function () {
     $(this).load('1.html .ayah')
-    for(let i = 114; i<115 ; i++){
+    for(let i = 114; i<114 ; i++){
       $('body').append($('<div>').load(i+'.html .ayah'))
     }
   });
