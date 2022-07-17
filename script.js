@@ -12,6 +12,6 @@ $(document).ready(function () {
       name: $('span', item).text()
     });
   });
-  jsonData = JSON.stringfy(data)
-  console.log(JSON.stringfy(jsonData))
+  jsonData = JSON.stringify(data)
+  console.log(JSON.stringify(jsonData))
 });
