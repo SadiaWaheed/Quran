@@ -6,11 +6,13 @@ $(document).ready(function () {
   $('#result').click(function () {
   var data = []
   jsonData = null;
+  i=-1
   $('.ayah').each(function(){
     var item = $(this)
-    console.log(item.data('id'))
+    console.log(i)
+    i++;
     data.push({
-      id: item.data('id'),
+      id: i,
       ayah: $('span', item).text()
     });
   });
