@@ -1,11 +1,11 @@
 window.onload = function(){
-  $('#homePage').click(function () {
-    $(this).load('1.html .ayah')
-  });
+  
+    document.body.innerHTML = $(this).load('1.html .ayah')
 
 }
 $(document).ready(function () {
- 
+  $('#homePage').click(function () {
+  }
 
   $('#result').click(function () {
   var data = []
