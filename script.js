@@ -3,7 +3,7 @@ $(document).ready(function () {
   $('#homePage').click(function () {
     $(this).load('1.html .ayah')
     for(let i = 2; i<=114 ; i++){
-      $('#homePage').append($('<div>').load(i+'.html .ayah'))
+      $('body').append($('<div class="Surah">').load(i+'.html .ayah'))
     }
   });
 
