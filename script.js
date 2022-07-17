@@ -8,6 +8,7 @@ $(document).ready(function () {
   jsonData = null;
   $('.ayah').each(function(){
     var item = $(this)
+    console.log(item)
     data.push({
       id: item.data('id'),
       ayah: $('span', item).text()
