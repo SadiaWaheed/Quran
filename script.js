@@ -1,11 +1,8 @@
-window.onload = function(){
-  
-    $('#homePage').load('1.html .ayah')
 
-}
 $(document).ready(function () {
   $('#homePage').click(function () {
-  }
+    $(this).load('1.html .ayah')
+  });
 
   $('#result').click(function () {
   var data = []
