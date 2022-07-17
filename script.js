@@ -7,7 +7,7 @@ $(document).ready(function () {
   $('#result').click(function () {
   var data = []
   jsonData = null;
-  i=-1
+  i=0
   $('.ayah').each(function(){
     var item = $(this)
     i++;
