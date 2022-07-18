@@ -28,7 +28,7 @@ $(document).ready(function () {
       s++;    
       surah.push({
         surah_no:s,
-        text:JSON.stringify(data)
+        text:data
       });
      
     });
