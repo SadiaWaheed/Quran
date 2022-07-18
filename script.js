@@ -32,9 +32,9 @@ $(document).ready(function () {
       });
      
     });
-    console.log(surah)
+    document.body.innerHTML=""
     jsonData = JSON.stringify(surah)
-    console.log(jsonData)
+    document.body.innerHTML = jsonData
 
     });
 });
