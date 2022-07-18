@@ -8,28 +8,33 @@ $(document).ready(function () {
   });
 
   $('#result').click(function () {
-  var data = []
-  surah = []
-  jsonData = null;
-  s=0
-  $('.surah').each(function(){
-    s++;    
-    a=0
-    $('.ayah').each(function(){
-      var item = $(this)
-      a++;
-      data.push({
-        ayah_no: a,
-        indo_text: $('span', item).text()
-      });    
+    var data = []
+    surah = []
+    jsonData = null;
+    s=0
+
+    $('.surah').each(function(){
+      a=0
+      
+      $('.ayah').each(function(){
+        var item = $(this)
+        a++;
+        data.push({
+          ayah_no: a,
+          indo_text: $('span', item).text()
+        });    
+      });
+      
+      s++;    
+      surah.push({
+        surah_no:s,
+        text:JSON.stringify(data)
+      });
+      console.log(surah)
     });
-    surah.push({
-      surah_no:s,
-      text:JSON.stringify(data)
-    });
-  });
   
-  jsonData = JSON.stringify(surah)
-  console.log(jsonData)
-  });
+    jsonData = JSON.stringify(surah)
+    console.log(jsonData)
+
+    });
 });
