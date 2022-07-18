@@ -30,9 +30,9 @@ $(document).ready(function () {
         surah_no:s,
         text:JSON.stringify(data)
       });
-      console.log(surah)
+     
     });
-  
+    console.log(surah)
     jsonData = JSON.stringify(surah)
     console.log(jsonData)
 
