@@ -3,7 +3,7 @@ $(document).ready(function () {
   $('#result').click(function () {
     var surah = []
     jsonData = null;
-    for(let i = 1; i <=114; i++){     
+    for(let i = 1; i <=5; i++){     
       $('body').load(i+'.html .ayah')
         var  data = []
         a=1        
