@@ -4,6 +4,7 @@ $(document).ready(function () {
   $('#homePage').click(function () {
     $(this).load('112.html .ayah')
     for(let i = 113; i<=114 ; i++){
+
       $('body').append($('<div class="surah-'+i+'">').load(i+'.html .ayah'))
     }
   });
@@ -17,7 +18,7 @@ $(document).ready(function () {
       var  data = []
       a=1
       
-      $('.ayah-'+a).each(function(){
+      $('.ayah #'+a).each(function(){
         var item = $(this)
         data.push({
           ayah_no: a,
