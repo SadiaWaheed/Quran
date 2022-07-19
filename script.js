@@ -28,7 +28,7 @@ $(document).ready(function () {
       });
       console.log("final a = "+a)
       s++; 
-      console.log("s"=s)   
+      console.log("s= "+s)   
       surah.push({
         surah_no:s,
         text:data
