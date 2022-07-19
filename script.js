@@ -5,7 +5,7 @@ $(document).ready(function () {
     $(this).load('112.html .ayah')
     for(let i = 113; i<=114 ; i++){
 
-      $('body').append($('<div class="surah-'+i+'">').load(i+'.html .ayah'))
+      $('body').append($('<div class="surah">').load(i+'.html .ayah'))
     }
   });
 
