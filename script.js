@@ -32,8 +32,7 @@ $(document).ready(function () {
         surah.push({
           surah_no:i,
           text:data
-        });      
-        s++; 
+        }); 
         console.log("i= "+i)   
        console.log(surah)
       });
