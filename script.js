@@ -19,16 +19,16 @@ $(document).ready(function () {
       $('.ayah').each(function(){
         var item = $(this)
         a++;
-        console.log(a)
+        console.log("a="+a)
         data.push({
           ayah_no: a,
           indo_text: $('span', item).text()
         });    
         console.log(data)
       });
-      
+      console.log("final a = "+a)
       s++; 
-      console.log(s)   
+      console.log("s"=s)   
       surah.push({
         surah_no:s,
         text:data
