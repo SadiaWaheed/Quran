@@ -8,12 +8,12 @@ $(document).ready(function () {
   });
 
   $('#result').click(function () {
-    var data = []
-    surah = []
+    var surah = []
     jsonData = null;
     s=0
 
     $('.surah').each(function(){
+      var  data = []
       a=0
       
       $('.ayah').each(function(){
