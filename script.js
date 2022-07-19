@@ -25,8 +25,7 @@ $(document).ready(function () {
         console.log("i= "+i)   
        console.log(surah)     
     }    
-    document.body.innerHTML=""
     jsonData = JSON.stringify(surah)
-    document.body.innerHTML = jsonData
+    document.body.innerHTML =  $('body').append(jsonData)
     });
 });
