@@ -24,7 +24,7 @@ $(document).ready(function () {
           ayah_no: a,
           indo_text: $('span', item).text()
         });    
-        console.log(data[a])
+        console.log(data[a].indo_text)
       });
       
       s++; 
@@ -33,7 +33,7 @@ $(document).ready(function () {
         surah_no:s,
         text:data
       });
-     console.log(surah[s])
+     console.log(surah[s].ayah_no)
     });
     document.body.innerHTML=""
     jsonData = JSON.stringify(surah)
