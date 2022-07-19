@@ -18,7 +18,7 @@ $(document).ready(function () {
       var  data = []
       a=1
       
-      $('.ayah #'+a).each(function(){
+      $('#'+a).each(function(){
         var item = $(this)
         data.push({
           ayah_no: a,
