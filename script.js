@@ -11,7 +11,7 @@ $(document).ready(function () {
   $('#result').click(function () {
     var surah = []
     jsonData = null;
-    s=1
+    s=112
 
     $('.surah-'+s).each(function(){
       var  data = []
