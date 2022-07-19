@@ -9,7 +9,7 @@ $(document).ready(function () {
     for(let i = 1; i <=114; i++){     
       $('body').load(i+'.html .ayah')
 
-      $('.surah').each(function(){
+     
         var  data = []
         a=1
         
@@ -30,7 +30,7 @@ $(document).ready(function () {
         }); 
         console.log("i= "+i)   
        console.log(surah)
-      });
+     
     }
     
   
