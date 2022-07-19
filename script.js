@@ -3,17 +3,16 @@ $(document).ready(function () {
  
   $('#homePage').click(function () {
     $(this).load('112.html .ayah')
-    for(let i = 113; i<=114 ; i++){
 
-      $('body').append($('<div class="surah">').load(i+'.html .ayah'))
-    }
+     
   });
 
   $('#result').click(function () {
     var surah = []
     jsonData = null;
     s=112
-
+    $('body').load(s+'.html .ayah')
+  
     $('.surah').each(function(){
       var  data = []
       a=1
@@ -23,8 +22,7 @@ $(document).ready(function () {
         data.push({
           ayah_no: a,
           indo_text: $('span', item).text()
-        });    
-        if (item.id ==1) {break;}
+        });  
         a++;
         console.log("a="+a)
         console.log(data)
