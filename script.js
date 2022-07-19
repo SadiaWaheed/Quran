@@ -1,19 +1,13 @@
 
 $(document).ready(function () {
  
-  $('#homePage').click(function () {
-    $(this).load('1.html .ayah')     
-  });
 
   $('#result').click(function () {
     var surah = []
     jsonData = null;
 
-    for(let i = 1; i <=114; i++){
-      if(i == 1){}
-      else{
-        $('body').load(i+'.html .ayah')
-      }
+    for(let i = 1; i <=114; i++){     
+      $('body').load(i+'.html .ayah')
 
       $('.surah').each(function(){
         var  data = []
