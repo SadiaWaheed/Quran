@@ -12,7 +12,7 @@ $(document).ready(function () {
     jsonData = null;
 
     for(let i = 112; i <=114; i++){
-      $('body').load(s+'.html .ayah')
+      $('body').load(i+'.html .ayah')
 
       $('.surah').each(function(){
         var  data = []
