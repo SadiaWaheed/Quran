@@ -14,7 +14,7 @@ $(document).ready(function () {
     jsonData = null;
     s=112
 
-    $('.surah-'+s).each(function(){
+    $('.surah').each(function(){
       var  data = []
       a=1
       
