@@ -18,12 +18,13 @@ $(document).ready(function () {
       var  data = []
       a=1
       
-      $('#'+a).each(function(){
+      $('.ayah').each(function(){
         var item = $(this)
         data.push({
           ayah_no: a,
           indo_text: $('span', item).text()
         });    
+        if (item.id ==1) break
         a++;
         console.log("a="+a)
         console.log(data)
