@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+ 
   $('#homePage').click(function () {
     $(this).load('1.html .ayah')
     for(let i = 113; i<=114 ; i++){
@@ -10,13 +11,13 @@ $(document).ready(function () {
   $('#result').click(function () {
     var surah = []
     jsonData = null;
-    s=0
+    s=1
 
-    $('.surah').each(function(){
+    $('.surah-'+s).each(function(){
       var  data = []
       a=0
       
-      $('.surah .ayah').each(function(){
+      $('.ayah').each(function(){
         var item = $(this)
         a++;
         console.log("a="+a)
@@ -27,12 +28,12 @@ $(document).ready(function () {
         console.log(data)
       });
       console.log("final a = "+a)
-      s++; 
-      console.log("s= "+s)   
       surah.push({
         surah_no:s,
         text:data
-      });
+      });      
+      s++; 
+      console.log("s= "+s)   
      console.log(surah)
     });
     document.body.innerHTML=""
