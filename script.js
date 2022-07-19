@@ -2,7 +2,7 @@
 $(document).ready(function () {
  
   $('#homePage').click(function () {
-    $(this).load('1.html .ayah')
+    $(this).load('112.html .ayah')
     for(let i = 113; i<=114 ; i++){
       $('body').append($('<div class="surah-'+i+'">').load(i+'.html .ayah'))
     }
@@ -15,16 +15,16 @@ $(document).ready(function () {
 
     $('.surah-'+s).each(function(){
       var  data = []
-      a=0
+      a=1
       
-      $('.ayah').each(function(){
+      $('.ayah-'+a).each(function(){
         var item = $(this)
-        a++;
-        console.log("a="+a)
         data.push({
           ayah_no: a,
           indo_text: $('span', item).text()
         });    
+        a++;
+        console.log("a="+a)
         console.log(data)
       });
       console.log("final a = "+a)
