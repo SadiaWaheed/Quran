@@ -19,18 +19,20 @@ $(document).ready(function () {
       $('.ayah').each(function(){
         var item = $(this)
         a++;
+        console.log(a)
         data.push({
           ayah_no: a,
           indo_text: $('span', item).text()
         });    
       });
       
-      s++;    
+      s++; 
+      console.log(s)   
       surah.push({
         surah_no:s,
         text:data
       });
-     
+     console.log(surah)
     });
     document.body.innerHTML=""
     jsonData = JSON.stringify(surah)
