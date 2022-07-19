@@ -24,7 +24,7 @@ $(document).ready(function () {
           ayah_no: a,
           indo_text: $('span', item).text()
         });    
-        if (item.id ==1) break
+        if (item.id ==1) {break;}
         a++;
         console.log("a="+a)
         console.log(data)
