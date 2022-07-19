@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-  $('.surah').click(function () {
+  $('#homePage').click(function () {
     $(this).load('1.html .ayah')
     for(let i = 113; i<=114 ; i++){
       $('body').append($('<div class="surah">').load(i+'.html .ayah'))
