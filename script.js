@@ -16,7 +16,7 @@ $(document).ready(function () {
       var  data = []
       a=0
       
-      $('.ayah').each(function(){
+      $('.surah .ayah').each(function(){
         var item = $(this)
         a++;
         console.log("a="+a)
