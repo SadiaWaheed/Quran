@@ -10,7 +10,8 @@ $(document).ready(function () {
     jsonData = null;
 
     for(let i = 1; i <=114; i++){
-      if(i != 1){
+      if(i == 1){}
+      else{
         $('body').load(i+'.html .ayah')
       }
 
