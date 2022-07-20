@@ -2,8 +2,8 @@
 $(document).ready(function () {
  
  $('#homePage').click(function () {
-  $(this).load('112.html .112-ayah')
-for(let i =113; i<=114; i++){
+  $(this).load('1.html .1-ayah')
+for(let i =1; i<=114; i++){
     $('body').append($('<div class="surah">').load(i+'.html .'+i+'-ayah'))
     
   }
@@ -12,7 +12,7 @@ for(let i =113; i<=114; i++){
 $('#result').click(function () {
   var surah = []
   jsonData = null;
-  s=112
+  s=1
 
   $('.surah').each(function(){
     var  data = []
