@@ -1,6 +1,7 @@
 
  $('#homePage').click(function () {
   $(this).load('112.html .ayah')
+  document.body.getElementsByClassName("ayah").className = "ayah-112"
   for(let i = 113; i<=114 ; i++){
 
     $('body').append($('<div class="surah">').load(i+'.html .ayah'))
