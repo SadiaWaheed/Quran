@@ -18,7 +18,7 @@ $('#result').click(function () {
     var  data = []
     a=1
     
-    $('.ayah-'+s).each(function(){
+    $('.'+s+'-ayah-').each(function(){
       var item = $(this)
       data.push({
         ayah_no: a,
