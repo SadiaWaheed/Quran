@@ -23,7 +23,7 @@
 			font-size: 30px;
 		}
 
-		.ayah {
+		.108-ayah {
 			font-family: "IndoPak";
 			direction: rtl;
 			padding-bottom: 10px;
@@ -31,7 +31,7 @@
 			border-bottom: 1px solid #cacaca;
 		}
 
-		.ayah:hover {
+		.108-ayah:hover {
 			background: #f3f3f39e;
 		}
 
@@ -55,7 +55,7 @@
 </head>
 <body>
 
-<h4 class='title'>Surah 108  -  Al Kawthar (الكوثر)</h4><div class='selector'>Goto Ayah: <select id='ayah-selector'></select></div><div class='ayah' id='1'><span class='word'>اِنَّاۤ</span> <span class='word'>اَعْطَیْنٰكَ</span> <span class='word'>الْكَوْثَرَؕ</span> </div><div class='ayah' id='2'><span class='word'>فَصَلِّ</span> <span class='word'>لِرَبِّكَ</span> <span class='word'>وَ انْحَرْؕ</span> </div><div class='ayah' id='3'><span class='word'>اِنَّ</span> <span class='word'>شَانِئَكَ</span> <span class='word'>هُوَ</span> <span class='word'>الْاَبْتَرُ۠</span> </div>
+<h4 class='title'>Surah 108  -  Al Kawthar (الكوثر)</h4><div class='selector'>Goto 108-ayah: <select id='108-ayah-selector'></select></div><div class='108-ayah' id='1'><span class='word'>اِنَّاۤ</span> <span class='word'>اَعْطَیْنٰكَ</span> <span class='word'>الْكَوْثَرَؕ</span> </div><div class='108-ayah' id='2'><span class='word'>فَصَلِّ</span> <span class='word'>لِرَبِّكَ</span> <span class='word'>وَ انْحَرْؕ</span> </div><div class='108-ayah' id='3'><span class='word'>اِنَّ</span> <span class='word'>شَانِئَكَ</span> <span class='word'>هُوَ</span> <span class='word'>الْاَبْتَرُ۠</span> </div>
 </body>
 
 <script src="./jquery.js"></script>
@@ -65,13 +65,13 @@
 	var total_ayahs = 3;
 
 	$(window).on('load', function (e) {
-		for (var ayah = 1; ayah <= total_ayahs; ayah++) {
-	    $("#ayah-selector").append("<option val='" + ayah + "'>Ayah " + ayah + "</option>");
+		for (var 108-ayah = 1; 108-ayah <= total_ayahs; 108-ayah++) {
+	    $("#108-ayah-selector").append("<option val='" + 108-ayah + "'>108-ayah " + 108-ayah + "</option>");
 	  }
 	});
 
-	$(document).on('change','#ayah-selector', function() {
-	  var selected_ayah = $('#ayah-selector').val().split(' ')[1];
+	$(document).on('change','#108-ayah-selector', function() {
+	  var selected_ayah = $('#108-ayah-selector').val().split(' ')[1];
 	  window.location.replace("#" + selected_ayah);
 	});
 
