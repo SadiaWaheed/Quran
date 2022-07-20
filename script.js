@@ -2,9 +2,9 @@
 $(document).ready(function () {
  
  $('#homePage').click(function () {
-  $(this).load('112.html .112-ayah')
+  $(this).load('112.html')
 for(let i =113; i<=114; i++){
-    $('body').append($('<div class="surah">').load(i+'.html .'+i+'-ayah'))
+    $('body').append($('<div class="surah">').load(i+'.html'))
     
   }
 });
