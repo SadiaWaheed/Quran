@@ -23,7 +23,7 @@
 			font-size: 30px;
 		}
 
-		.ayah {
+		.94-ayah {
 			font-family: "IndoPak";
 			direction: rtl;
 			padding-bottom: 10px;
@@ -31,7 +31,7 @@
 			border-bottom: 1px solid #cacaca;
 		}
 
-		.ayah:hover {
+		.94-ayah:hover {
 			background: #f3f3f39e;
 		}
 
@@ -55,24 +55,24 @@
 </head>
 <body>
 
-<h4 class='title'>Surah 94  -  Ash Sharh (الشرح)</h4><div class='selector'>Goto Ayah: <select id='ayah-selector'></select></div><div class='ayah' id='1'><span class='word'>اَلَمْ</span> <span class='word'>نَشْرَحْ</span> <span class='word'>لَكَ</span> <span class='word'>صَدْرَكَۙ</span> </div><div class='ayah' id='2'><span class='word'>وَ وَضَعْنَا</span> <span class='word'>عَنْكَ</span> <span class='word'>وِزْرَكَۙ</span> </div><div class='ayah' id='3'><span class='word'>الَّذِیْۤ</span> <span class='word'>اَنْقَضَ</span> <span class='word'>ظَهْرَكَۙ</span> </div><div class='ayah' id='4'><span class='word'>وَ رَفَعْنَا</span> <span class='word'>لَكَ</span> <span class='word'>ذِكْرَكَؕ</span> </div><div class='ayah' id='5'><span class='word'>فَاِنَّ</span> <span class='word'>مَعَ</span> <span class='word'>الْعُسْرِ</span> <span class='word'>یُسْرًاۙ</span> </div><div class='ayah' id='6'><span class='word'>اِنَّ</span> <span class='word'>مَعَ</span> <span class='word'>الْعُسْرِ</span> <span class='word'>یُسْرًاؕ</span> </div><div class='ayah' id='7'><span class='word'>فَاِذَا</span> <span class='word'>فَرَغْتَ</span> <span class='word'>فَانْصَبْۙ</span> </div><div class='ayah' id='8'><span class='word'>وَ اِلٰی</span> <span class='word'>رَبِّكَ</span> <span class='word'>فَارْغَبْ۠</span> </div>
+<h4 class='title'>Surah 94  -  Ash Sharh (الشرح)</h4><div class='selector'>Goto Ayah: <select id='94-ayah-selector'></select></div><div class='94-ayah' id='1'><span class='word'>اَلَمْ</span> <span class='word'>نَشْرَحْ</span> <span class='word'>لَكَ</span> <span class='word'>صَدْرَكَۙ</span> </div><div class='94-ayah' id='2'><span class='word'>وَ وَضَعْنَا</span> <span class='word'>عَنْكَ</span> <span class='word'>وِزْرَكَۙ</span> </div><div class='94-ayah' id='3'><span class='word'>الَّذِیْۤ</span> <span class='word'>اَنْقَضَ</span> <span class='word'>ظَهْرَكَۙ</span> </div><div class='94-ayah' id='4'><span class='word'>وَ رَفَعْنَا</span> <span class='word'>لَكَ</span> <span class='word'>ذِكْرَكَؕ</span> </div><div class='94-ayah' id='5'><span class='word'>فَاِنَّ</span> <span class='word'>مَعَ</span> <span class='word'>الْعُسْرِ</span> <span class='word'>یُسْرًاۙ</span> </div><div class='94-ayah' id='6'><span class='word'>اِنَّ</span> <span class='word'>مَعَ</span> <span class='word'>الْعُسْرِ</span> <span class='word'>یُسْرًاؕ</span> </div><div class='94-ayah' id='7'><span class='word'>فَاِذَا</span> <span class='word'>فَرَغْتَ</span> <span class='word'>فَانْصَبْۙ</span> </div><div class='94-ayah' id='8'><span class='word'>وَ اِلٰی</span> <span class='word'>رَبِّكَ</span> <span class='word'>فَارْغَبْ۠</span> </div>
 </body>
 
 <script src="./jquery.js"></script>
 
 <script type="text/javascript">
 	
-	var total_ayahs = 8;
+	var total_94-ayahs = 8;
 
 	$(window).on('load', function (e) {
-		for (var ayah = 1; ayah <= total_ayahs; ayah++) {
-	    $("#ayah-selector").append("<option val='" + ayah + "'>Ayah " + ayah + "</option>");
+		for (var 94-ayah = 1; 94-ayah <= total_94-ayahs; 94-ayah++) {
+	    $("#94-ayah-selector").append("<option val='" + 94-ayah + "'>Ayah " + 94-ayah + "</option>");
 	  }
 	});
 
-	$(document).on('change','#ayah-selector', function() {
-	  var selected_ayah = $('#ayah-selector').val().split(' ')[1];
-	  window.location.replace("#" + selected_ayah);
+	$(document).on('change','#94-ayah-selector', function() {
+	  var selected_94-ayah = $('#94-ayah-selector').val().split(' ')[1];
+	  window.location.replace("#" + selected_94-ayah);
 	});
 
 </script>
